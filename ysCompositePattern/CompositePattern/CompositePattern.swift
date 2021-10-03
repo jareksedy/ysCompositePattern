@@ -15,7 +15,6 @@ protocol TaskComposite {
     var name: String { get }
     
     func add(child: Task)
-    func listChildren() -> [String]
 }
 
 class Task: TaskComposite, Identifiable, ObservableObject {
@@ -31,9 +30,5 @@ class Task: TaskComposite, Identifiable, ObservableObject {
     
     func add(child: Task) {
         children.append(child)
-    }
-    
-    func listChildren() -> [String] {
-        return children.map { $0.name }
     }
 }
