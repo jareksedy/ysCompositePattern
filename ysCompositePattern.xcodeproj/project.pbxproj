@@ -11,6 +11,7 @@
 		CAC1788B270A074000DA0B19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1788A270A074000DA0B19 /* ContentView.swift */; };
 		CAC1788D270A074700DA0B19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC1788C270A074700DA0B19 /* Assets.xcassets */; };
 		CAC17890270A074700DA0B19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC1788F270A074700DA0B19 /* Preview Assets.xcassets */; };
+		CAC17897270A08AF00DA0B19 /* CompositePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC17896270A08AF00DA0B19 /* CompositePattern.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CAC1788A270A074000DA0B19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CAC1788C270A074700DA0B19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAC1788F270A074700DA0B19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CAC17896270A08AF00DA0B19 /* CompositePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositePattern.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				CAC17888270A074000DA0B19 /* ysCompositePatternApp.swift */,
 				CAC1788A270A074000DA0B19 /* ContentView.swift */,
+				CAC17896270A08AF00DA0B19 /* CompositePattern.swift */,
 				CAC1788C270A074700DA0B19 /* Assets.xcassets */,
 				CAC1788E270A074700DA0B19 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAC1788B270A074000DA0B19 /* ContentView.swift in Sources */,
+				CAC17897270A08AF00DA0B19 /* CompositePattern.swift in Sources */,
 				CAC17889270A074000DA0B19 /* ysCompositePatternApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
