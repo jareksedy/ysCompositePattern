@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 protocol TaskComposite {
-    var id: UUID { get }
     var parent: TaskComposite? { get }
     var children: [Task] { get set }
     var name: String { get }
@@ -18,7 +17,6 @@ protocol TaskComposite {
 }
 
 class Task: TaskComposite, Identifiable, ObservableObject {
-    let id = UUID()
     var parent: TaskComposite?
     @Published var children: [Task] = []
     var name: String
