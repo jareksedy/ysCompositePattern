@@ -14,7 +14,9 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(myTaskTree.children) { child in
-                    Text(child.name).padding()
+                    NavigationLink(destination: EmptyView()) {
+                        Text(child.name).padding()
+                    }
                 }
             }
             .listStyle(.plain)
