@@ -30,3 +30,5 @@ class Task: TaskComposite, Identifiable, ObservableObject {
         children.append(child)
     }
 }
+
+let previewTask = Task(name: "For preview purpose only", parent: nil)

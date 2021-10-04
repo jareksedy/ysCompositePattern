@@ -14,13 +14,7 @@ struct RootView: View {
         NavigationView {
             List {
                 ForEach(myTaskTree.children) { child in
-                    NavigationLink(destination: EmptyView()) {
-                        VStack(alignment: .leading) {
-                            Text(child.name).font(.title)
-                            Text("Subtasks: \(child.children.count)").foregroundColor(.secondary)
-                                
-                        }.padding()
-                    }
+                    ListItemView(task: child)
                 }
             }
             .listStyle(.plain)
