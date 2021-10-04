@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var myTaskTree = Task(name: "My tasks", parent: nil)
+    @StateObject var myTaskTree = Task(name: "One big task", parent: nil)
     
     var body: some View {
         NavigationView {
@@ -22,7 +22,7 @@ struct ContentView: View {
             .listStyle(.plain)
             .navigationBarTitle(myTaskTree.name).padding()
             .toolbar {
-                Button("Add task") {
+                Button("Add subtask") {
                     textAlert() { userInput in
                         guard userInput != "" else { return }
                         myTaskTree.add(child: Task(name: userInput, parent: myTaskTree))
