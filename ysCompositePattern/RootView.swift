@@ -7,15 +7,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @StateObject var myTaskTree = Task(name: "One big task", parent: nil)
+struct RootView: View {
+    @StateObject var myTaskTree = Task(name: "Root task", parent: nil)
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(myTaskTree.children) { child in
                     NavigationLink(destination: EmptyView()) {
-                        Text(child.name).padding()
+                        VStack(alignment: .leading) {
+                            Text(child.name).font(.title)
+                            Text("Subtasks: \(child.children.count)").foregroundColor(.secondary)
+                                
+                        }.padding()
                     }
                 }
             }
@@ -33,9 +37,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().preferredColorScheme(.dark)
+        RootView().preferredColorScheme(.dark)
     }
 }
 
